@@ -39,7 +39,7 @@ $(function() {
     $('#link_login').click()
  })
   })
-  $('#form_login').on('submit',function(){
+  $('#form_login').submit(function(e) {
     e.preventDefault()
     $.ajax({
       url: '/api/login',
